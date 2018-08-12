@@ -4,8 +4,6 @@ import Map from 'ol/Map';
 import View from 'ol/View';
 import TileLayer from 'ol/layer/Tile';
 import XYZ from 'ol/source/XYZ';
-import Projection from 'ol/proj/Projection';
-import { setTimeout } from 'timers';
  
 export default class MapView extends Component {
     constructor(props){

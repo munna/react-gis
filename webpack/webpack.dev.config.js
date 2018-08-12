@@ -3,9 +3,11 @@ var path = require('path');
 
 var parentDir = path.join(__dirname, '../');
 module.exports = {
-    entry: [
-        path.join(parentDir, 'src/index.js')
-    ],
+    entry: 
+        {
+        client: path.join(parentDir, 'src/client.js'),
+        bundle: path.join(parentDir, 'src/bundle.js')
+    },
     module: {
         rules: [{
             test: /\.(js|jsx)$/,
@@ -19,7 +21,7 @@ module.exports = {
     },
     output: {
         path: parentDir + '/dist',
-        filename: 'bundle.js'
+        filename: "[name].js"
     },
     devServer: {
         contentBase: parentDir,

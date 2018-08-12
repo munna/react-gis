@@ -1,0 +1,17 @@
+.minimized span,.minimized button{ display: none; }
+body{height:97vh;}
+.tools{position: absolute;z-index:5000;left:0;top:0;height: 0px;
+width: 0px;
+overflow: visible;}
+.floatwindow{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+position: absolute;z-index: 5;display: inline-flex;margin:20px;
+transition-property:transform;transition-duration: .5s;
+}
+.floatwindow>.card-header{ padding: 0.15rem .25rem;} 
+.container-fluid{
+    padding-left: 0px;padding-right:0px;
+}
+.minimized .handle:hover{padding: 8px;min-width: 200px;}
+.minimized .handle:hover i{font-size: 23px;}
+.minimized .handle:hover span{display: inline-flex;}
